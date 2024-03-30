@@ -1,0 +1,939 @@
+/* main.css */
+
+.carticon{
+  color: black;
+  font-size: 30px;
+}
+.carticon:hover{
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.navbar{
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+.navbar>.container{
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navbar-toggler-icon {
+  background-color: transparent; /* Remove the default background color */
+  border: 2px solid #ffffff; /* Add a border */
+  border-radius: 4px; /* Rounded corners */
+  width: 30px; /* Adjust the width as needed */
+  height: 2px; /* Set the height to create a horizontal bar */
+}
+
+.navbar-toggler {
+  background-color: #000000; 
+}
+
+.navbar-toggler-icon {
+  transition: background-color 0.3s;
+}
+
+.navbar-custom {
+  background-color: #ffc107;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+  margin-left: -120px;
+  font-size: 28px;
+  font-weight: bold;
+  color: inherit;
+}
+.navbar-brand span{
+  color: inherit;
+  font-weight: bold;
+  transition: color 0.3s;
+  transition: transform 0.3s;
+}
+.navbar-brand span:hover {
+  transform: scale(1.1);
+  width: fit-content;
+  color: #ffffff;
+  background: #000;
+  padding: 10px;
+}
+.navbar-nav .nav-item {
+  margin-right: 15px;
+}
+
+.navbar-nav .nav-link {
+  font-size: 18px;
+  color: inherit;
+  font-weight: bold;
+  transition: color 0.3s;
+  transition: transform 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  transform: scale(1.1);
+  width: fit-content;
+  color: #ffffff;
+  background: #000;
+  padding: 10px;
+}
+
+.navbar-logo {
+  margin-top: -30px;
+  margin-bottom: -30px;
+  width: 120px;
+  height: auto; /* Maintain aspect ratio */
+}
+@media (max-width: 600px) {
+  .navbar-toggler-icon {
+    width: 20px; /* Adjust the width for smaller screens */
+    height: 2px;
+  }
+
+  .navbar-logo {
+    width: 100px; /* Adjust the logo size for smaller screens */
+  }
+}
+
+/* Medium screens (768px and below) */
+@media (max-width: 375px) {
+  .navbar-brand span{
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .navbar-nav .nav-item {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/* Large screens (992px and below) */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    margin-top: 20px;}
+    
+  .navbar-brand {
+    margin-left: unset;}
+  .navbar-toggler {
+    background-color: #000000; /* Adjust background color for larger screens */
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1300px) {
+  .navbar>.container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar-nav .nav-item {
+    margin-right: 10px; /* Reduce margin between nav items */
+  }
+}
+/* Extra-large screens (1200px and below) */
+
+
+/* Responsive styles */
+
+
+
+
+/* Custom styles for the header */
+.header {
+  background-image: url('images/header.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 200px 0;
+  text-align: center;
+  color: #ffffff;
+}
+@media (max-width: 768px) {
+  .header h1 {
+      font-size: 36px;
+  }
+}
+
+.header h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.header h6 {
+  font-size: 18px;
+}
+
+.header .btn {
+  background-color: #ffc107;
+  border: none;
+  padding: 12px 24px;
+  font-size: 20px;
+  border-radius: 30px;
+  margin-top: 20px;
+  text-decoration: none;
+  color: black;
+
+}
+
+.header .btn:hover{
+background: #000;
+color: #ffc107;
+}
+
+
+.btn {
+  margin-top: 20px;
+  background-color: #000000;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #ffc107;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #000000;
+}
+
+.buy-btn{
+justify-content: center;
+background-color: #ffc107;
+border: none;
+padding: 12px 24px;
+font-size: 20px;
+border-radius: 30px;
+margin-top: 20px;
+text-decoration: none;
+color: black;
+
+}
+
+.buy-btn:hover{
+text-decoration: none;
+background: #000;
+color: #ffc107;
+}
+.buy-now-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.buy-now-card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  max-width: 100%;
+}
+
+.buy-now-card .card-body {
+  padding: 1.25rem;
+}
+
+.buy-now-card .card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.buy-now-card .card-text {
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.buy-now-card .btn-primary {
+  background-color: #000000;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #ffc107;
+  transition: background-color 0.3s;
+}
+
+.buy-now-card .btn-primary:hover {
+  background-color: #ffc107;
+  color: #000;
+}
+
+
+/* Gaming Section Styles */
+.gaming-section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+}
+
+.gaming-card {
+  position: relative;
+  overflow: hidden;
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.gaming-card:hover {
+  transform: scale(1.05);
+}
+
+.gaming-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+
+}
+
+.gaming-card:hover .card-overlay {
+  opacity: 1;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  background-color: #ffc107;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: black;
+  color: #ffc107;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .gaming-card {
+    margin-bottom: 20px;
+  }
+}
+
+/* Updated Styles for Gaming Section */
+.bg-dark {
+  background-image: url('images/header.jpg'); /* Replace with your gaming-themed background image */
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.bg-dark h5 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.bg-dark h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .bg-dark h1 {
+    font-size: 28px;
+  }
+}
+
+
+/* Updated Styles for Gaming Section */
+.gaming-section {/* Dark background color for the gaming theme */
+  color: #000000;
+  padding: 40px 0;
+}
+
+.gaming-heading {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.gaming-icon {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.gaming-text {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .gaming-heading {
+    font-size: 28px;
+  }
+  .gaming-icon {
+    font-size: 24px;
+  }
+  .gaming-text {
+    font-size: 16px;
+  }
+}
+
+
+/* Updated Styles for Gaming Footer */
+/* Footer styles */
+/* Footer styles */
+.gaming-footer {
+background-color: #1f1f1f;
+color: #ffffff;
+padding: 60px 0;
+}
+
+.gaming-footer-heading {
+font-size: 28px;
+font-weight: bold;
+margin-bottom: 20px;
+color: #ffc107; /* Highlight the heading */
+}
+
+.gaming-footer p {
+font-size: 16px;
+margin-bottom: 20px;
+}
+
+/* Useful Links styles */
+.useful-links {
+list-style: none;
+padding-left: 0;
+}
+
+.useful-links li {
+margin-bottom: 10px;
+}
+
+.useful-links a {
+color: #ffffff;
+text-decoration: none;
+transition: color 0.3s;
+}
+
+.useful-links a:hover {
+color: #ffc107;
+}
+
+/* Latest News styles */
+.latest-news {
+list-style: none;
+padding-left: 0;
+}
+
+.latest-news li {
+margin-bottom: 10px;
+}
+
+.latest-news a {
+color: #ffffff;
+text-decoration: none;
+transition: color 0.3s;
+}
+
+.latest-news a:hover {
+color: #ffc107;
+}
+
+/* Social Icons */
+.social-icons {
+margin-top: 30px; /* Adjust spacing */
+text-align: center; /* Center the icons */
+}
+
+.social-icons a {
+font-size: 24px;
+margin-right: 20px;
+color: #fff;
+text-decoration: none;
+transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+color: #ffc107;
+transform: scale(1.1);
+}
+
+/* Animation */
+.fade-in {
+opacity: 0;
+transform: translateY(20px);
+animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+0% {
+    opacity: 0;
+    transform: translateY(20px);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+
+
+/* Style for the video background section */
+.video-background {
+position: relative;
+overflow: hidden;
+height: 100vh;
+padding: 0;
+margin: 0;
+}
+
+/* Style for the video element */
+#bg-video {
+position: absolute;
+top: 0;
+left: 0;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: -1;
+}
+
+/* Style for the content on top of the video */
+.video-content {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+background: rgba(0, 0, 0, 0.5);
+}
+
+/* Style for the text and button on top of the video */
+.video-heading {
+font-size: 36px;
+font-weight: bold;
+color: #ffffff;
+margin-bottom: 20px;
+}
+
+.video-subheading {
+font-size: 18px;
+color: #ffffff;
+margin-bottom: 40px;
+}
+
+.btn-primary.btn-lg {
+background-color: #ffc107;
+border: none;
+border-radius: 30px;
+padding: 15px 30px;
+font-size: 20px;
+text-decoration: none;
+color: black;
+transition: background-color 0.3s;
+}
+
+.btn-primary.btn-lg:hover {
+background-color: #000;
+color: #ffc107;
+}
+
+/* Your existing styles */
+
+/* Testimonial Section Styles */
+.testimonial-section {
+  background-color: #ffc107;
+  padding: 50px 0;
+  position: relative; /* Add this to hide overflow */
+  overflow: hidden; /* Add this to hide overflow */
+}
+.testimonial-slider {
+  display: flex;
+  overflow: hidden; /* Hide the overflowing content */
+}
+
+.testimonial-slide {
+  display: none;
+  flex: 0 0 100%; /* Make each slide take the full width of the container */
+  transition: transform 0.5s ease; /* Add smooth slide transition */
+}
+
+.testimonial-slide.active {
+  display: block;
+}
+.testimonial-content {
+background-color: #ffffff;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+margin-bottom: 20px;
+}
+
+.testimonial-text {
+font-size: 25px;
+margin-bottom: 10px;
+}
+
+.testimonial-author {
+font-size: 20px;
+font-style: italic;
+color: #666;
+}
+
+.testimonial-controls {
+margin-top: 20px;
+}
+
+/* Updated styles for previous and next buttons */
+.btnn {
+background-color: #000;
+border: none;
+border-radius: 30px;
+padding: 10px 20px;
+font-size: 18px;
+color: #ffc107;
+margin-right: 10px;
+cursor: pointer;
+}
+
+.btnn:hover {
+border: 2px solid black;
+background-color: transparent;
+color: #000;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+.testimonial-content {
+    padding: 15px;
+}
+
+.testimonial-text {
+    font-size: 16px;
+}
+
+.testimonial-author {
+    font-size: 14px;
+}
+}
+
+
+
+/* Reset some default styles for consistency */
+body, h1, h2, p {
+margin: 0;
+padding: 0;
+}
+
+/* Global styles */
+body {
+font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+.site-header {
+background-image: url('images/main.jpg');
+background-size: cover;
+background-position: center;
+color: #fff;
+text-align: center;
+padding: 200px 0;
+}
+
+.site-header h1 {
+font-size: 48px;
+font-weight: bold;
+margin-top: 20px;
+}
+
+.site-header p {
+font-size: 18px;
+}
+
+.site-header .btn {
+background-color: #ffc107;
+border: none;
+border-radius: 30px;
+padding: 12px 24px;
+font-size: 20px;
+text-decoration: none;
+color: black;
+transition: background-color 0.3s, color 0.3s;
+}
+
+.site-header .btn:hover {
+background-color: #000;
+color: #ffc107;
+}
+
+/* Features section styles */
+.features-section {
+background-color: #000;
+color: #fff;
+padding: 60px 0;
+text-align: center;
+}
+
+.feature {
+margin-bottom: 40px;
+}
+
+.feature i {
+font-size: 48px;
+color: #ffc107;
+}
+
+.feature h2 {
+font-size: 24px;
+margin-top: 20px;
+}
+
+.feature p {
+font-size: 18px;
+}
+
+
+
+/* Services section styles */
+.services-section {
+background-color: #ffc107;
+color: #000000;
+padding: 60px 0;
+text-align: center;
+}
+
+.service {
+margin-bottom: 40px;
+}
+
+.service i {
+font-size: 48px;
+color: #000000;
+}
+
+.service h2 {
+font-size: 24px;
+margin-top: 20px;
+}
+
+.service p {
+font-size: 18px;
+}
+
+
+/* Contact section styles */
+/* Contact Section styles */
+.contact-section {
+background-color: white;
+color: #000;
+padding: 60px 0;
+text-align: center;
+}
+
+.contact-container {
+max-width: 800px;
+margin: 0 auto;
+}
+
+.contact-section h1 {
+color: #000000;
+font-size: 36px;
+margin-bottom: 20px;
+}
+
+.contact-section p {
+color: #000;
+font-size: 18px;
+margin-bottom: 40px;
+}
+
+.contact-info {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+.contact-form {
+flex: 1;
+background-color: #333;
+padding: 40px; /* Increase the padding to increase the form size */
+border-radius: 10px;
+margin-bottom: 20px; /* Add some space between form and details */
+width: 100%; /* Ensure form takes full width on small screens */
+}
+
+.contact-details {
+flex: 1;
+background-color: #333;
+padding: 40px; /* Increase the padding to increase the details size */
+border-radius: 10px;
+width: 100%; /* Ensure details take full width on small screens */
+}
+
+.form-group {
+margin-bottom: 20px;
+}
+
+label {
+  font-size: larger;
+font-weight: bold;
+display: block;
+margin-bottom: 10px;
+color: #ffc107;
+}
+
+input,
+textarea {
+width: 100%;
+padding: 12px; /* Increase the padding for larger input fields */
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 16px; /* Increase font size for input fields */
+}
+
+button {
+background-color: #ffc107;
+border: none;
+border-radius: 30px;
+padding: 14px 28px; /* Increase padding for larger button */
+font-size: 24px; /* Increase font size for button */
+text-decoration: none;
+color: black;
+transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+background-color: #000;
+color: #ffc107;
+}
+
+.contact-details h2 {
+font-size: 24px;
+font-weight: bold;
+margin-bottom: 20px;
+color: #ffc107;
+}
+
+.contact-details p {
+font-size: 16px;
+margin-bottom: 15px;
+color: #fff;
+}
+
+
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+.contact-form,
+.contact-details {
+    padding: 30px; /* Reduce padding for smaller screens */
+}
+.form{margin-bottom: 20px;}
+.contact-info {
+  margin-left: 10px;
+  width: 95%;
+}
+
+input,
+textarea {
+    padding: 10px; /* Reset padding for input fields */
+    font-size: 16px; /* Reset font size for input fields */
+}
+
+button {
+    padding: 12px 24px; /* Reset padding for button */
+    font-size: 20px; /* Reset font size for button */
+}
+}
+
+/* About Us Section styles */
+
+
+.about-us-section {
+padding: 80px 0;
+background-color: #f8f8f8; /* Background color for the section */
+}
+
+/* Assuming your image container has a fixed width of, for example, 400px */
+
+
+@media (max-width: 767px) {
+  .about-us-image{
+    margin-left: 74px;
+    margin-bottom: 47px;
+  }
+}
+@media (max-width: 520px) {
+  .about-us-image{
+    margin-left: 37px;
+
+  }
+}
+@media (max-width: 425px) {
+  .about-us-image{
+    margin-left: -1px;
+
+
+  }
+}
+.about-us-image {
+  max-width: 100%;
+  margin-top: -27px;
+  max-height: 633px;
+}
+
+.about-us-content {
+padding: 0 30px;
+}
+
+.about-us-content h2 {
+font-size: 28px;
+font-weight: bold;
+margin-bottom: 20px;
+color: #ffc107; /* Text color for the heading */
+}
+
+.about-us-content p {
+font-size: 16px;
+margin-bottom: 20px;
+color: #333; /* Text color for the content */
+}
+
+
+.card-titles{
+  color: black;
+  font-weight: 600;
+  font-size: 24px;
+}

@@ -1,0 +1,101 @@
+/* Product.css */
+@media (max-width: 768px) {
+  .Toastify__toast-container {
+    z-index: 9999; 
+  }
+}
+.custom-toast {
+  background-color: #ffc107; /* Background color */
+  color: black; /* Text color */
+}
+
+.custom-toast .Toastify__progress-bar {
+  background: black; /* Timer line color */
+}
+.product-heading {
+  background: #000000;
+
+    font-size: 4rem;
+    text-align: center;
+
+    color: #fff; /* Customize the color as needed */
+  }
+.product-list {
+  background: #000000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .product-card {
+    max-width: calc(33.33% - 20px); /* Adjust as needed for your desired number of cards per row */
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 10px 10px 10px rgb(255 193 7 / 60%);
+    margin-bottom: 20px;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 10px 10px 10px rgba(214, 0, 0, 0.6);
+  }
+  
+  .product-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .product-details {
+    padding: 16px;
+    text-align: center;
+  }
+  
+  .product-name {
+    font-weight: bold;
+    font-size: 26px;
+    margin: 0;
+  }
+  
+  .product-description {
+    font-size: 1rem;
+  }
+  
+  .product-price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 8px 0;
+  }
+  
+  .add-to-cart-button {
+    background-color: #ffc107;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: black;
+    color: #ffc107;
+  }
+  
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 768px) {
+    .product-card {
+      max-width: calc(50% - 20px); /* Adjust as needed for your desired number of cards per row */
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .product-card {
+      max-width: 100%;
+    }
+  }
+  

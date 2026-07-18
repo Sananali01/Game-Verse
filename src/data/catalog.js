@@ -32,10 +32,10 @@ import legionGo from '../assets/consoles/legion go.jpg'
 import msiClaw from '../assets/consoles/msiclaw.jpg'
 
 // Gaming PCs
-import desktop from '../assets/PCS/desktop.jpg'
-import laptop from '../assets/pcs/laptop.jpg'
-import miniPc from '../assets/PCS/mini pc.jpg'
-import customPc from '../assets/pcs/PC.jpg'
+import desktop from '../assets/pc/desktop.jpg'
+import laptop from '../assets/pc/laptop.jpg'
+import miniPc from '../assets/pc/mini pc.jpg'
+import customPc from '../assets/pc/PC.jpg'
 
 // Components
 import gpu from '../assets/components/GPU.jpg'

@@ -1,0 +1,31 @@
+.pageLoader {
+  position: fixed; inset: 0; background: var(--bg); z-index: 999;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.mark {
+  width: 64px; height: 64px; border-radius: 18px;
+  display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: #04110A; font-family: var(--font-heading); font-weight: 700; font-size: 20px;
+}
+
+.skeletonCard {
+  background: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius-lg);
+  padding: 16px; display: flex; flex-direction: column; gap: 10px;
+}
+
+.skeletonMedia, .skeletonLine {
+  border-radius: var(--radius-sm);
+  background: linear-gradient(90deg, var(--surface-alt) 25%, var(--card-border) 50%, var(--surface-alt) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s infinite;
+}
+
+.skeletonMedia { aspect-ratio: 3/4; border-radius: var(--radius-md); }
+.skeletonLine { height: 12px; }
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}

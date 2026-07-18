@@ -1,0 +1,29 @@
+.controls { display: flex; gap: 10px; }
+.searchInput { width: 220px; }
+.sortSelect { width: 180px; cursor: pointer; }
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
+.chip {
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--card-border);
+  background: var(--card);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-dim);
+  transition: all var(--transition);
+}
+
+.chip:hover { border-color: var(--primary); color: var(--text); }
+.chipActive { background: var(--primary); border-color: var(--primary); color: #04110A; font-weight: 700; }
+
+@media (max-width: 640px) {
+  .controls { flex-direction: column; width: 100%; }
+  .searchInput, .sortSelect { width: 100%; }
+}

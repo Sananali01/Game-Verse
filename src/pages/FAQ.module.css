@@ -1,0 +1,11 @@
+.list { max-width: 760px; display: flex; flex-direction: column; gap: 10px; }
+
+.item { background: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius-md); overflow: hidden; }
+
+.question {
+  width: 100%; display: flex; justify-content: space-between; align-items: center;
+  padding: 18px 20px; font-weight: 600; text-align: left;
+}
+
+.answerWrap { overflow: hidden; }
+.answer { padding: 0 20px 18px; color: var(--text-dim); font-size: 14px; line-height: 1.6; }

@@ -1,0 +1,11 @@
+.layout { display: grid; grid-template-columns: 1.4fr 1fr; gap: 32px; align-items: start; }
+.sent { text-align: center; padding: 30px 0; color: var(--text-dim); }
+.info { display: flex; flex-direction: column; gap: 16px; }
+.infoRow {
+  display: flex; align-items: center; gap: 12px; background: var(--card); border: 1px solid var(--card-border);
+  border-radius: var(--radius-sm); padding: 14px 16px; font-size: 14px;
+}
+
+@media (max-width: 800px) {
+  .layout { grid-template-columns: 1fr; }
+}

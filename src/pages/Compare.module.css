@@ -1,0 +1,30 @@
+.table {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.col {
+  position: relative;
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.remove {
+  position: absolute; top: 14px; right: 14px; z-index: 2;
+  width: 28px; height: 28px; border-radius: 50%; background: rgba(7,11,20,0.6); color: #fff;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.title { font-size: 16px; margin-top: 4px; }
+
+.row {
+  display: flex; justify-content: space-between; font-size: 13px;
+  padding: 8px 0; border-top: 1px solid var(--card-border); color: var(--text-dim);
+}
+.row strong { color: var(--text); }

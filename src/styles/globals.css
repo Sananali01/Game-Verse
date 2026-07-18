@@ -1,0 +1,95 @@
+.section { padding: 80px 0; }
+.section-sm { padding: 48px 0; }
+
+.section-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 36px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: clamp(24px, 3vw, 34px);
+  font-weight: 700;
+}
+
+.section-sub {
+  color: var(--text-dim);
+  font-size: 15px;
+  max-width: 560px;
+  margin-top: 8px;
+}
+
+.grid {
+  display: grid;
+  gap: 22px;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 13px 26px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: transform var(--transition), filter var(--transition), background var(--transition), border-color var(--transition);
+}
+
+.btn-primary { background: var(--primary); color: #04110A; }
+.btn-primary:hover { transform: translateY(-2px); filter: brightness(1.08); }
+
+.btn-outline { background: transparent; border: 1px solid var(--card-border); color: var(--text); }
+.btn-outline:hover { border-color: var(--primary); color: var(--primary); }
+
+.btn-block { width: 100%; }
+
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+}
+
+.input-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
+.input-group label { font-size: 13px; font-weight: 600; color: var(--text-dim); }
+
+.input {
+  background: var(--bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  color: var(--text);
+  font-size: 14px;
+  width: 100%;
+  transition: border-color var(--transition);
+}
+
+.input:focus { outline: none; border-color: var(--primary); }
+
+.breadcrumbs { color: var(--text-dim); font-size: 13px; margin-bottom: 20px; }
+.breadcrumbs a:hover { color: var(--primary); }
+
+.empty-state {
+  text-align: center;
+  padding: 80px 20px;
+  color: var(--text-dim);
+}
+
+@media (max-width: 560px) {
+  .section { padding: 56px 0; }
+}

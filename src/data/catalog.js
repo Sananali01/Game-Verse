@@ -21,7 +21,7 @@ import monitor from '../assets/accessories/Monitor.jpg'
 import tablet from '../assets/accessories/Tablet.jpg'
 
 // Consoles
-import ps5 from '../assets/consoles/ps5.jpg'
+import ps5 from '../assets/consoles/PS5.jpg'
 import psPortal from '../assets/consoles/PORTAL.jpg'
 import xboxX from '../assets/consoles/xbox x.jpg'
 import xboxS from '../assets/consoles/xbox s.jpg'
